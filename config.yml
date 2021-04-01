@@ -26,7 +26,7 @@ steps:
 Step 1: Install Android Studio
 - title: Introducing Android Studio
   description: This step introduces you to the Android Studio IDE
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_comment
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
