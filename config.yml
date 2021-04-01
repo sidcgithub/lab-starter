@@ -26,35 +26,35 @@ steps:
 Step 1: Install Android Studio
 - title: Introducing Android Studio
   description: This step introduces you to the Android Studio IDE
-  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_comment.created
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 Step 2: Run default app on Emulator
 - title: Introducing the Android Emulator
   description: This step introduces you to the Android Virtual Device manager that allows you to create an Emulator. You will run the Default app on the Emulator
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_comment.created
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 Step 3: Edit Layout with desired Views
  - title: Introducing XML Layouts
   description: You will now customize the layout to include a TextView and a Button
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: pull_request.synchronize
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 Step 4: Enable Text to Speech
  - title:  Enable the Android TTS (Text to Speech) engine
   description: Make your device read the text in the TextView onCLick of a Button
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: pull_request.synchronize
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 Step 5: Run App
  - title: Run your first App on the Emulator
   description: You will run the app on the Emulator to test it.
-#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_comment.created
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
